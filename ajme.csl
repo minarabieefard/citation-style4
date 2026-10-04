@@ -7,15 +7,19 @@
   <info>
     <title>AUT Journal of Mechanical Engineering</title>
     <title-short>AUT J Mech Eng</title-short>
+
     <id>http://www.zotero.org/styles/aut-journal-of-mechanical-engineering</id>
+
     <link href="http://www.zotero.org/styles/aut-journal-of-mechanical-engineering"
           rel="self"/>
+
     <updated>2026-10-04T14:00:00+00:00</updated>
   </info>
 
-  <!-- ========================= -->
-  <!-- CITATION                   -->
-  <!-- ========================= -->
+
+  <!-- ====================================================== -->
+  <!-- CITATION                                                -->
+  <!-- ====================================================== -->
 
   <citation collapse="citation-number">
 
@@ -23,17 +27,16 @@
       <key variable="citation-number"/>
     </sort>
 
-    <layout prefix="[" suffix="]">
-      <text variable="citation-number"
-            delimiter=", "/>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
     </layout>
 
   </citation>
 
 
-  <!-- ========================= -->
-  <!-- BIBLIOGRAPHY               -->
-  <!-- ========================= -->
+  <!-- ====================================================== -->
+  <!-- BIBLIOGRAPHY                                            -->
+  <!-- ====================================================== -->
 
   <bibliography
       hanging-indent="false"
@@ -48,13 +51,18 @@
 
     <layout suffix=".">
 
+      <!-- Reference number -->
       <text variable="citation-number"
             prefix="["
             suffix="] "/>
 
+
+      <!-- ================================================== -->
+      <!-- JOURNAL ARTICLE                                    -->
+      <!-- ================================================== -->
+
       <choose>
 
-        <!-- JOURNAL ARTICLE -->
         <if type="article-journal">
 
           <names variable="author" suffix=", ">
@@ -94,7 +102,10 @@
         </if>
 
 
-        <!-- BOOK -->
+        <!-- ================================================== -->
+        <!-- BOOK                                               -->
+        <!-- ================================================== -->
+
         <else-if type="book">
 
           <names variable="author" suffix=", ">
@@ -128,7 +139,10 @@
         </else-if>
 
 
-        <!-- BOOK CHAPTER -->
+        <!-- ================================================== -->
+        <!-- BOOK CHAPTER                                        -->
+        <!-- ================================================== -->
+
         <else-if type="chapter">
 
           <names variable="author" suffix=", ">
@@ -162,7 +176,10 @@
         </else-if>
 
 
-        <!-- CONFERENCE PAPER -->
+        <!-- ================================================== -->
+        <!-- CONFERENCE PAPER                                    -->
+        <!-- ================================================== -->
+
         <else-if type="paper-conference">
 
           <names variable="author" suffix=", ">
@@ -196,7 +213,10 @@
         </else-if>
 
 
-        <!-- THESIS -->
+        <!-- ================================================== -->
+        <!-- THESIS                                              -->
+        <!-- ================================================== -->
+
         <else-if type="thesis">
 
           <names variable="author" suffix=", ">
@@ -230,7 +250,10 @@
         </else-if>
 
 
-        <!-- REPORT -->
+        <!-- ================================================== -->
+        <!-- REPORT                                               -->
+        <!-- ================================================== -->
+
         <else-if type="report">
 
           <names variable="author" suffix=", ">
@@ -261,7 +284,10 @@
         </else-if>
 
 
-        <!-- OTHER -->
+        <!-- ================================================== -->
+        <!-- OTHER TYPES                                          -->
+        <!-- ================================================== -->
+
         <else>
 
           <names variable="author" suffix=", ">
