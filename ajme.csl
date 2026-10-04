@@ -28,17 +28,20 @@
 
   <citation collapse="citation-number">
 
-    <sort>
-      <key variable="citation-number"/>
-    </sort>
+  <sort>
+    <key variable="citation-number"/>
+  </sort>
 
-    <layout prefix="[" suffix="]">
+  <layout
+      prefix="["
+      suffix="]"
+      delimiter=", ">
 
-      <text variable="citation-number"/>
+    <text variable="citation-number"/>
 
-    </layout>
+  </layout>
 
-  </citation>
+</citation>
 
 
   <!-- ====================================================== -->
